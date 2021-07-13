@@ -1,3 +1,3 @@
 # CSS Animation Timeline
 
-Interactive timeline of events with photos using CSS animations.
+Interactive timeline of events and photos using CSS animations and Next.js.
