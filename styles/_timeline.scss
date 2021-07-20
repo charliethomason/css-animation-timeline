@@ -1,0 +1,128 @@
+ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 200px;
+}
+.btn {
+  background: #037;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  padding: 0 10px;
+  text-align: center;
+  transition: background .2s ease;
+  width: 100%;
+
+  &:hover {
+    background: #17519c;
+  }
+
+  &:after {
+    border-top: 4px solid green;
+    content: '';
+    display: none;
+    right: 100%;
+    position: absolute;
+    top: 20px;
+    width: 100px;
+    animation: drawLine 2s linear forwards;
+  }
+
+  &.active {
+    background: green;
+    color: #000;
+
+    &:after {
+      display: block;
+    }
+  }
+}
+.circle {
+  position: absolute;
+  left: -199px;
+  height: 100px;
+  top: -30px;
+  width: 100px;
+  transform: rotate(90deg);
+
+  &-half {
+    height: 100px;
+    width: 50px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+
+    &:after {
+      border: 4px solid transparent;
+      border-radius: 50%;
+      content: '';
+      position: absolute;
+      top: 0;
+      transform: rotate(-135deg);
+      height: 92px;
+      width: 92px;
+    }
+
+    &.left {
+      left: 0px;
+
+      &:after {
+        border-bottom-color: green;
+        border-left-color: green;
+        left: 4px;
+        animation: rotateLeft 2s linear forwards;
+      }
+    }
+
+    &.right {
+      right: 0px;
+
+      &:after {
+        border-top-color: green;
+        border-right-color: green;
+        right: 4px;
+        animation: rotateRight 2s linear forwards;
+      }
+    }
+  }
+}
+
+.event {
+  margin: 5px 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+
+  &:nth-child(even) {
+    .btn:after {
+      right: auto;
+      left: 100%;
+    }
+
+    .circle {
+      left: auto;
+      right: -199px;
+      transform: rotate(-95deg);
+    }
+  }
+}
+
+@keyframes drawLine {
+  0% { width: 0px; }
+  33%, 100% { width: 100px; }
+}
+@keyframes rotateRight {
+  0%, 33% { transform: rotate(-135deg); }
+  66%, 100% { transform: rotate(45deg); }
+}
+@keyframes rotateLeft {
+  0%, 66% { transform: rotate(-135deg); }
+  100% { transform: rotate(45deg); }
+}
