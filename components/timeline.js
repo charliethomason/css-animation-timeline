@@ -14,7 +14,7 @@ export default function Timeline() {
   }
 
   return (
-    <ul>
+    <ul className="timeline">
       {events.map(({ label, id }) => (
         <Event
           key={id}
