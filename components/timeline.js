@@ -15,14 +15,20 @@ export default function Timeline() {
 
   return (
     <ul className="timeline">
-      {events.map(({ label, id }) => (
-        <Event
-          key={id}
-          label={label}
-          isActive={active === id}
-          onClick={() => handleClick(id)}
-        />
-      ))}
+      {events.map(evt => {
+        return evt.year ? (
+          <h2 key={evt.id} className="year">{evt.label}</h2>
+        ) : (
+          <Event
+            key={evt.id}
+            label={evt.label}
+            img={evt.img}
+            alignRight={evt.right}
+            isActive={active === evt.id}
+            onClick={() => handleClick(evt.id)}
+          />
+        )
+      })}
     </ul>
   );
 }

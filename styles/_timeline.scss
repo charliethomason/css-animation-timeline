@@ -9,17 +9,23 @@
   position: relative;
   right: 90px;
 }
+.year {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px -200px 0 0;
+  text-align: center;
+  text-shadow: 2px 2px 0px $black;
+  width: 415px;
+}
 .btn {
   background: $blue;
   border: none;
   color: $white;
   cursor: pointer;
   display: block;
-  font-size: 16px;
-  font-weight: bold;
-  height: 40px;
-  padding: 0 10px;
-  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  text-align: left;
   transition: background .2s ease;
   width: 100%;
 
@@ -33,7 +39,7 @@
     display: none;
     right: 100%;
     position: absolute;
-    top: 20px;
+    top: calc(50% - 2px);
     width: 100px;
     animation: drawLine 2s linear forwards;
   }
@@ -51,9 +57,10 @@
   position: absolute;
   left: -199px;
   height: 100px;
-  top: -30px;
+  top: calc(50% - 50px);
   width: 100px;
-  transform: rotate(90deg);
+  transform: rotate(88deg);
+  z-index: 1;
 
   &-half {
     height: 100px;
@@ -96,6 +103,20 @@
     }
   }
 }
+.img {
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  opacity: 0;
+  left: -191px;
+  top: calc(50% - 46px);
+  height: 92px;
+  width: 92px;
+
+  &.active {
+    animation: fadeIn 2s linear forwards;
+  }
+}
 
 .event {
   margin: 10px 0 0;
@@ -103,17 +124,17 @@
   position: relative;
   width: 100%;
 
-  &:first-child {
-    margin-top: 0;
-  }
-
-  &:nth-child(odd) {
+  &:not(.align-right) {
     border-right: 10px solid $dark-grey;
     margin-right: 20px;
     padding-right: 10px;
+
+    .btn {
+      text-align: right;
+    }
   }
 
-  &:nth-child(even) {
+  &.align-right {
     border-left: 10px solid $dark-grey;
     padding-left: 10px;
     left: calc(100% + 15px);
@@ -126,7 +147,12 @@
     .circle {
       left: auto;
       right: -199px;
-      transform: rotate(-95deg);
+      transform: rotate(-93deg);
+    }
+    
+    .img {
+      left: auto;
+      right: -191px;
     }
   }
 
@@ -137,13 +163,17 @@
 
 @keyframes drawLine {
   0% { width: 0px; }
-  33%, 100% { width: 100px; }
+  25%, 100% { width: 100px; }
 }
 @keyframes rotateRight {
-  0%, 33% { transform: rotate(-135deg); }
-  66%, 100% { transform: rotate(45deg); }
+  0%, 25% { transform: rotate(-135deg); }
+  50%, 100% { transform: rotate(45deg); }
 }
 @keyframes rotateLeft {
-  0%, 66% { transform: rotate(-135deg); }
-  100% { transform: rotate(45deg); }
+  0%, 50% { transform: rotate(-135deg); }
+  75%, 100% { transform: rotate(45deg); }
+}
+@keyframes fadeIn {
+  0%, 75% { opacity: 0; }
+  100% { opacity: 1 }
 }
