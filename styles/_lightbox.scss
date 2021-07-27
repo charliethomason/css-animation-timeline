@@ -1,0 +1,54 @@
+.lightbox {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+
+  &.hidden {
+    display: none;
+  }
+
+  &-dialog {
+    background-color: $white;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    max-height: 90%;
+    max-width: 90%;
+  }
+
+  &-content {
+    align-items: center;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  &-label {
+    color: $black;
+    font-size: 14px;
+  }
+
+  &-close {
+    background: $black;
+    border: 2px solid $white;
+    border-radius: 20px;
+    color: $white;
+    cursor: pointer;
+    padding: 5px 10px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
