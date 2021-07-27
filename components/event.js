@@ -7,7 +7,9 @@ export default function Event({ label, month, img, alignRight, isActive, onClick
         className={`btn ${activeClass}`}
         onClick={onClick}
       >
-        <strong>{month}:</strong> {label}
+        <div className="btn-text">
+          <strong>{month}:</strong> {label}
+        </div>
       </button>
       <div className={`circle ${isActive ? "" : "hidden"}`} onClick={onCircleClick}>
         <div className="circle-half left"></div>

@@ -18,19 +18,22 @@
   width: 415px;
 }
 .btn {
-  background: $blue;
+  $self: &;
+
+  background: none;
   border: none;
-  color: $white;
   cursor: pointer;
   display: block;
-  font-size: 14px;
-  padding: 10px;
-  text-align: left;
-  transition: background .2s ease;
   width: 100%;
 
-  &:hover {
-    background: $light-blue;
+  &-text {
+    background: $blue;
+    color: $white;
+    font-size: 14px;
+    padding: 10px;
+    text-align: left;
+    transition: all .2s ease;
+    width: 100%;
   }
 
   &:after {
@@ -44,9 +47,22 @@
     animation: drawLine 2s linear forwards;
   }
 
+  &:hover {
+    #{$self}-text {
+      background: $light-blue;
+    }
+  }
+
   &.active {
-    background: $green;
-    color: $black;
+    border-right: 5px solid $green;
+    padding: 20px 0;
+
+    #{$self}-text {
+      background: $green;
+      color: $black;
+      margin-right: 10px;
+      width: calc(100% - 20px);
+    }
 
     &:after {
       display: block;
@@ -126,23 +142,35 @@
   width: 100%;
 
   &:not(.align-right) {
-    border-right: 10px solid $dark-grey;
     margin-right: 20px;
-    padding-right: 10px;
 
-    .btn {
+    .btn-text {
       text-align: right;
     }
   }
 
   &.align-right {
-    border-left: 10px solid $dark-grey;
-    padding-left: 10px;
     left: calc(100% + 15px);
 
-    .btn:after {
-      right: auto;
-      left: 100%;
+    .btn {
+      &:before {
+        right: auto;
+        left: 0;
+      }
+      &:after {
+        right: auto;
+        left: 100%;
+      }
+      &.active {
+        border-right: none;
+        border-left: 5px solid $green;
+        padding: 20px 0;
+
+        .btn-text {
+          margin-right: 0;
+          margin-left: 20px;
+        }
+      }
     }
 
     .circle {
@@ -158,10 +186,37 @@
   }
 
   &:hover {
-    border-color: $light-blue;
+    .btn {
+      animation: btnHoverLeft 0.5s linear forwards;
+    }
+
+    .btn-text {
+      margin-right: 10px;
+      width: calc(100% - 20px);
+    }
+
+    &.align-right {
+      .btn {
+        animation: btnHoverRight 0.5s linear forwards;
+      }
+      .btn-text {
+        margin-right: 0;
+        margin-left: 20px;
+      }
+    }
   }
 }
 
+@keyframes btnHoverLeft {
+  0% { border-right: 0px solid $grey; padding: 0px; }
+  50% { border-right: 0px solid $grey; padding: 20px 0; }
+  100% { border-right: 5px solid $grey; padding: 20px 0; }
+}
+@keyframes btnHoverRight {
+  0% { border-left: 0px solid $grey; padding: 0px; }
+  50% { border-left: 0px solid $grey; padding: 20px 0; }
+  100% { border-left: 5px solid $grey; padding: 20px 0; }
+}
 @keyframes drawLine {
   0% { width: 0px; }
   25%, 100% { width: 100px; }
