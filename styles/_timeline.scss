@@ -1,18 +1,29 @@
 .timeline {
   align-items: center;
-  border-right: 5px dashed $grey;
   display: flex;
   flex-direction: column;
   list-style: none;
   margin: 0 auto;
-  max-width: 200px;
   position: relative;
-  right: 90px;
+
+  &:before {
+    background: $light-grey;
+    border-color: $grey;
+    border-style: solid;
+    border-width: 0 3px;
+    box-shadow: 0px 4px 3px 4px $dark-grey;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 12px;
+  }
 }
 .year {
   font-size: 20px;
   font-weight: bold;
-  margin: 10px -200px 0 0;
+  margin: 10px 0 0;
+  position: relative;
   text-align: center;
   text-shadow: 2px 2px 0px $black;
   width: 415px;
@@ -24,7 +35,6 @@
   border: none;
   cursor: pointer;
   display: block;
-  width: 100%;
 
   &-text {
     background: $blue;
@@ -33,7 +43,7 @@
     padding: 10px;
     text-align: left;
     transition: all .2s ease;
-    width: 100%;
+    width: 200px;
   }
 
   &:after {
@@ -55,13 +65,11 @@
 
   &.active {
     border-right: 5px solid $green;
-    padding: 20px 0;
+    padding: 20px 5px 20px 0;
 
     #{$self}-text {
       background: $green;
       color: $black;
-      margin-right: 10px;
-      width: calc(100% - 20px);
     }
 
     &:after {
@@ -139,10 +147,9 @@
   margin: 10px 0 0;
   padding: 0;
   position: relative;
-  width: 100%;
 
   &:not(.align-right) {
-    margin-right: 20px;
+    right: 120px;
 
     .btn-text {
       text-align: right;
@@ -150,7 +157,7 @@
   }
 
   &.align-right {
-    left: calc(100% + 15px);
+    left: 120px;
 
     .btn {
       &:before {
@@ -164,11 +171,9 @@
       &.active {
         border-right: none;
         border-left: 5px solid $green;
-        padding: 20px 0;
+        padding: 20px 0 20px 5px;
 
         .btn-text {
-          margin-right: 0;
-          margin-left: 20px;
         }
       }
     }
@@ -186,22 +191,18 @@
   }
 
   &:hover {
-    .btn {
+    .btn:not(.active) {
       animation: btnHoverLeft 0.5s linear forwards;
     }
 
     .btn-text {
-      margin-right: 10px;
-      width: calc(100% - 20px);
     }
 
     &.align-right {
-      .btn {
+      .btn:not(.active) {
         animation: btnHoverRight 0.5s linear forwards;
       }
       .btn-text {
-        margin-right: 0;
-        margin-left: 20px;
       }
     }
   }
@@ -209,13 +210,13 @@
 
 @keyframes btnHoverLeft {
   0% { border-right: 0px solid $grey; padding: 0px; }
-  50% { border-right: 0px solid $grey; padding: 20px 0; }
-  100% { border-right: 5px solid $grey; padding: 20px 0; }
+  50% { border-right: 0px solid $grey; padding: 20px 5px 20px 0; }
+  100% { border-right: 5px solid $grey; padding: 20px 5px 20px 0; }
 }
 @keyframes btnHoverRight {
   0% { border-left: 0px solid $grey; padding: 0px; }
-  50% { border-left: 0px solid $grey; padding: 20px 0; }
-  100% { border-left: 5px solid $grey; padding: 20px 0; }
+  50% { border-left: 0px solid $grey; padding: 20px 0 20px 5px; }
+  100% { border-left: 5px solid $grey; padding: 20px 0 20px 5px; }
 }
 @keyframes drawLine {
   0% { width: 0px; }
