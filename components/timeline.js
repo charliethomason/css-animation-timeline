@@ -21,7 +21,9 @@ export default function Timeline() {
       <ul className="timeline">
         {events.map(evt => {
           return evt.year ? (
-            <li><h2 key={evt.id} className="year">{evt.label}</h2></li>
+            <li key={evt.id}>
+              <h2 className="year">{evt.label}</h2>
+            </li>
           ) : (
             <Event
               key={evt.id}
