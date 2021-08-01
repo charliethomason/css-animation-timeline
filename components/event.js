@@ -1,10 +1,20 @@
-export default function Event({ label, month, img, alignRight, isActive, onClick, onCircleClick }) {
+export default function Event({
+  label,
+  month,
+  img,
+  alignRight,
+  notable,
+  isActive,
+  onClick,
+  onCircleClick
+}) {
   const activeClass = isActive ? "active" : "";
+  const btnClasses = `btn ${activeClass} ${notable ? "notable" : ""}`;
   return (
     <li className={`event ${alignRight ? "align-right" : ""}`}>
       <button
         type="button"
-        className={`btn ${activeClass}`}
+        className={btnClasses}
         onClick={onClick}
       >
         <div className="btn-text">

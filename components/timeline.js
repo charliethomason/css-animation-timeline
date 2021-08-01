@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { events } from "../data/events";
+import events from "../data/events.json";
 import Event from "./event";
 import Lightbox from "./lightbox";
 
@@ -21,8 +21,8 @@ export default function Timeline() {
       <ul className="timeline">
         {events.map(evt => {
           return evt.year ? (
-            <li key={evt.id}>
-              <h2 className="year">{evt.label}</h2>
+            <li key={evt.year}>
+              <h2 className="year">{evt.year}</h2>
             </li>
           ) : (
             <Event
@@ -31,6 +31,7 @@ export default function Timeline() {
               month={evt.month}
               img={evt.img}
               alignRight={evt.right}
+              notable={evt.notable}
               isActive={!!activeEvent && activeEvent.id === evt.id}
               onClick={() => handleClick(evt)}
               onCircleClick={() => setLightboxShown(true)}

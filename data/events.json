@@ -1,0 +1,690 @@
+[
+  {
+    "year": "2009"
+  },
+  {
+    "label": "we meet at Sundance 2009",
+    "month": "Jan",
+    "id": "jan09",
+    "img": "running",
+    "notable": true
+  },
+  {
+    "label": "we start dating",
+    "month": "Feb",
+    "id": "feb09",
+    "img": "running",
+    "right": true
+  },
+  {
+    "label": "Amanda convinces Charlie to get a tattoo",
+    "month": "Mar",
+    "id": "mar09"
+  },
+  {
+    "label": "Amanda graduates",
+    "month": "May",
+    "id": "may09a",
+    "right": true
+  },
+  {
+    "label": "Charlie's 1st White Sox game",
+    "month": "May",
+    "id": "may09b",
+    "right": true
+  },
+  {
+    "label": "we move in together at 777 N. Michigan",
+    "month": "July",
+    "id": "jul09a"
+  },
+  {
+    "label": "our first trip together, Portland and Seattle",
+    "month": "July",
+    "id": "jul09b"
+  },
+  {
+    "label": "Gill's wedding in NJ, Amanda meets Charlie's family",
+    "month": "Aug",
+    "id": "aug09",
+    "right": true
+  },
+  {
+    "label": "we attend a White Sox game with box of our dads",
+    "month": "Sept",
+    "id": "sep09"
+  },
+  {
+    "year": "2010"
+  },
+  {
+    "label": "Sundance 2010, Amanda lives in Park City for 1 month",
+    "month": "Jan",
+    "id": "jan10",
+    "right": true
+  },
+  {
+    "label": "Charlie's 1st St Patrick's Day/Grandma Dina's birthday with Amanda's family",
+    "month": "Mar",
+    "id": "mar10a"
+  },
+  {
+    "label": "our trip to New Orleans",
+    "month": "Mar",
+    "id": "mar10b",
+    "right": true
+  },
+  {
+    "label": "we move to 537 S. Dearborn",
+    "month": "Apr",
+    "id": "apr10"
+  },
+  {
+    "label": "Amanda and her parents join Charlie's family vacation at Lake Cumberland, KY",
+    "month": "July",
+    "id": "jul10",
+    "right": true
+  },
+  {
+    "label": "our first trip to Europe together, Switzerland and Italy",
+    "month": "Sept",
+    "id": "sept10",
+    "notable": true
+  },
+  {
+    "label": "our first time pumpkin picking with Madison and Tristan",
+    "month": "Oct",
+    "id": "oct10",
+    "right": true
+  },
+  {
+    "year": "2011"
+  },
+  {
+    "label": "Sundance 2011, Amanda as volunteer, Charlie as pass holder",
+    "month": "Jan",
+    "id": "jan11"
+  },
+  {
+    "label": "our first Mass at Old St. Patrick's Church",
+    "month": "Feb",
+    "id": "feb11a",
+    "notable": true,
+    "right": true
+  },
+  {
+    "label": "the Chicago Blizzard of 2011 (aka: 'Snowmageddon')",
+    "month": "Feb",
+    "id": "feb11b",
+    "right": true
+  },
+  {
+    "label": "Charlie gets first iPhone and joins Instagram",
+    "month": "Mar",
+    "id": "mar11"
+  },
+  {
+    "label": "Madison and Tristan's wedding",
+    "month": "May",
+    "id": "may11",
+    "right": true
+  },
+  {
+    "label": "we visit Palm Springs for the first time",
+    "month": "June",
+    "id": "jun11"
+  },
+  {
+    "label": "Charlie leaves Univ. of Chicago, gets job at The Plum Tree Group",
+    "month": "Oct",
+    "id": "oct11",
+    "right": true
+  },
+  {
+    "label": "Amanda gets her first iPhone",
+    "month": "Nov",
+    "id": "nov11"
+  },
+  {
+    "label": "we spend the holidays together for the first time",
+    "month": "Dec",
+    "id": "dec11",
+    "right": true
+  },
+  {
+    "year": "2012"
+  },
+  {
+    "label": "Charlie's parents move to Columbus, OH",
+    "month": "Jan",
+    "id": "jan12a"
+  },
+  {
+    "label": "Charlie begins 12-week Code Academy course",
+    "month": "Jan",
+    "id": "jan12b"
+  },
+  {
+    "label": "we move out of 537 S. Dearborn, and back in with parents",
+    "month": "Apr",
+    "id": "apr12",
+    "right": true
+  },
+  {
+    "label": "Charlie moves in with Amanda's parents",
+    "month": "June",
+    "id": "jun12a"
+  },
+  {
+    "label": "Charlie begins working for ConnectFood",
+    "month": "June",
+    "id": "jun12b"
+  },
+  {
+    "label": "Charlie signs 6-month lease at 1030 N. Dearborn",
+    "month": "Oct",
+    "id": "oct12a",
+    "right": true
+  },
+  {
+    "label": "Jessica and Tony's wedding in NJ",
+    "month": "Oct",
+    "id": "oct12b",
+    "right": true
+  },
+  {
+    "label": "Thanksgiving in Columbus with Gaga",
+    "month": "Nov",
+    "id": "nov12"
+  },
+  {
+    "label": "our first Jingle Bell 5K",
+    "month": "Dec",
+    "id": "dec12",
+    "right": true
+  },
+  {
+    "year": "2013"
+  },
+  {
+    "label": "Charlie begins working at Razorfish",
+    "month": "Jan",
+    "id": "jan13"
+  },
+  {
+    "label": "we move in to 1212 S. Michigan",
+    "month": "May",
+    "id": "may13",
+    "notable": true,
+    "right": true
+  },
+  {
+    "label": "our first trip to Emerald Isle together",
+    "month": "June",
+    "id": "jun13"
+  },
+  {
+    "label": "Christmas in Savannah, GA",
+    "month": "Dec",
+    "id": "dec13",
+    "right": true
+  },
+  {
+    "year": "2014"
+  },
+  {
+    "label": "we become members at Old St. Pat's",
+    "month": "Feb",
+    "id": "feb14"
+  },
+  {
+    "label": "we buy our first succulent",
+    "month": "May",
+    "id": "may14",
+    "right": true
+  },
+  {
+    "label": "our second trip to Emerald Isle together, first at Pebble Beach, Charlie's 30th birthday",
+    "month": "June",
+    "id": "jun14"
+  },
+  {
+    "label": "we visit Boston and Maine for the first time",
+    "month": "July",
+    "id": "jul14",
+    "right": true
+  },
+  {
+    "label": "our first Riot Fest",
+    "month": "Sept",
+    "id": "sept14"
+  },
+  {
+    "label": "Charlie begins work on bird book",
+    "month": "Oct",
+    "id": "oct14",
+    "right": true
+  },
+  {
+    "label": "Charlie buys engagement ring",
+    "month": "Nov",
+    "id": "nov14"
+  },
+  {
+    "year": "2015"
+  },
+  {
+    "label": "we get engaged at Sundance 2015, attending as ticket holders",
+    "month": "Jan",
+    "id": "jan15",
+    "notable": true,
+    "right": true
+  },
+  {
+    "label": "first visit to Glessner House",
+    "month": "May",
+    "id": "may15"
+  },
+  {
+    "label": "our third trip to Emerald Isle together",
+    "month": "June",
+    "id": "jun15a",
+    "right": true
+  },
+  {
+    "label": "Charlie buys a bike",
+    "month": "June",
+    "id": "jun15b",
+    "right": true
+  },
+  {
+    "label": "Charlie quits being friends with Michael",
+    "month": "Sept",
+    "id": "sept15a"
+  },
+  {
+    "label": "trip with Charlie's family to Blackwater Falls",
+    "month": "Sept",
+    "id": "sept15b"
+  },
+  {
+    "label": "Amanda's first auto race, NASCAR at Chicagoland Speedway",
+    "month": "Sept",
+    "id": "sept15c"
+  },
+  {
+    "label": "the F1 U.S. Grand Prix in Austin, TX",
+    "month": "Oct",
+    "id": "oct15",
+    "right": true
+  },
+  {
+    "year": "2016"
+  },
+  {
+    "label": "Charlie's parents move to Innsbruck, Austria",
+    "month": "Jan-May",
+    "id": "jan16"
+  },
+  {
+    "label": "we visit Charlie's parents in Austria",
+    "month": "Mar",
+    "id": "mar16"
+  },
+  {
+    "label": "Amanda's first IndyCar race, at Road America with Kalan and our dads",
+    "month": "June",
+    "id": "jun16",
+    "right": true
+  },
+  {
+    "label": "Amanda and Charlie married at Old St. Patrick's Church!",
+    "month": "July",
+    "id": "jul16a",
+    "notable": true
+  },
+  {
+    "label": "our honeymoon in Venezia, Italia",
+    "month": "July-Aug",
+    "id": "jul16b",
+    "notable": true
+  },
+  {
+    "label": "Amanda buys a bike",
+    "month": "Aug",
+    "id": "aug16",
+    "right": true
+  },
+  {
+    "label": "Hackney's Printers Row closes",
+    "month": "Sept",
+    "id": "sept16"
+  },
+  {
+    "label": "Charlie completes his bird book, 'Birds of Chicagoland'",
+    "month": "Nov",
+    "id": "nov16",
+    "right": true
+  },
+  {
+    "label": "3 generations of Mrs. Thomasons",
+    "month": "Dec",
+    "id": "dec16"
+  },
+  {
+    "year": "2017"
+  },
+  {
+    "label": "Amanda's 30th birthday in San Diego",
+    "month": "Feb",
+    "id": "feb17",
+    "right": true
+  },
+  {
+    "label": "Charlie leaves Razorfish, joins Uptake",
+    "month": "Mar",
+    "id": "mar17"
+  },
+  {
+    "label": "101st Running of the Indianapolis 500",
+    "month": "May",
+    "id": "may17",
+    "right": true
+  },
+  {
+    "label": "our first trip to Emerald Isle together",
+    "month": "June",
+    "id": "jun17"
+  },
+  {
+    "label": "our 1-year anniversary in Palm Springs",
+    "month": "July",
+    "id": "jul17",
+    "right": true
+  },
+  {
+    "label": "Michael and Rachel get married",
+    "month": "Aug",
+    "id": "aug17",
+    "notable": true
+  },
+  {
+    "label": "Charlie's parents move back to KY",
+    "month": "Sept",
+    "id": "sept17",
+    "right": true
+  },
+  {
+    "label": "we visit London and Paris with Kurt",
+    "month": "Oct",
+    "id": "oct17"
+  },
+  {
+    "label": "we buy our first queen-sized mattress",
+    "month": "Nov",
+    "id": "nov17",
+    "right": true
+  },
+  {
+    "year": "2018"
+  },
+  {
+    "label": "Chloe passes away",
+    "month": "Feb",
+    "id": "feb18"
+  },
+  {
+    "label": "Charlie buys a Ford Fusion",
+    "month": "Apr",
+    "id": "apr18a",
+    "right": true
+  },
+  {
+    "label": "Amanda gets a tattoo of Chloe",
+    "month": "Apr",
+    "id": "apr18b",
+    "right": true
+  },
+  {
+    "label": "Charlie quits drinking!",
+    "month": "May",
+    "id": "may18a",
+    "notable": true
+  },
+  {
+    "label": "bagels in the park",
+    "month": "May",
+    "id": "may18b"
+  },
+  {
+    "label": "Amanda promoted to Starbucks manager, takes over Greektown store",
+    "month": "June",
+    "id": "jun18a",
+    "right": true
+  },
+  {
+    "label": "Our fifth trip to Emerald Isle together, first with Charlie's whole family",
+    "month": "June",
+    "id": "jun18b",
+    "right": true
+  },
+  {
+    "label": "Charlie goes camping with Tom and Michael",
+    "month": "July",
+    "id": "jul18a"
+  },
+  {
+    "label": "first visit to Hackney's on Lake in Glenview",
+    "month": "July",
+    "id": "jul18b"
+  },
+  {
+    "label": "Charlie plays first gig with Echo's Aim",
+    "month": "Aug",
+    "id": "aug18",
+    "right": true
+  },
+  {
+    "label": "Amanda begins RCIA process at Old St. Pat's",
+    "month": "Sept",
+    "id": "sept18a"
+  },
+  {
+    "label": "trip to Laguna Seca and Carmel-by-the-Sea for IMSA race",
+    "month": "Sept",
+    "id": "sept18b"
+  },
+  {
+    "label": "Charlie gets Google Pixel 3",
+    "month": "Oct",
+    "id": "oct18a",
+    "right": true
+  },
+  {
+    "label": "Richard and Doris's 70th wedding anniversary",
+    "month": "Oct",
+    "id": "oct18b",
+    "right": true
+  },
+  {
+    "label": "Christkindlmarket Naperville with Madison, Tristan, and Cindy",
+    "month": "Dec",
+    "id": "dec18"
+  },
+  {
+    "year": "2019"
+  },
+  {
+    "label": "Sundance 2019, 10-year anniversary of when we met",
+    "month": "Jan",
+    "id": "jan19",
+    "right": true
+  },
+  {
+    "label": "we move to 2126 N. Lincoln Ave",
+    "month": "Feb",
+    "id": "feb19a",
+    "notable": true
+  },
+  {
+    "label": "trip Blackhawks game together",
+    "month": "Feb",
+    "id": "feb19b"
+  },
+  {
+    "label": "Amanda becomes manager of Division and Paulina Starbucks",
+    "month": "Mar",
+    "id": "mar19",
+    "right": true
+  },
+  {
+    "label": "Amanda's becomes Catholic, Confirmation at Old St. Pat's",
+    "month": "Apr",
+    "id": "apr19",
+    "notable": true
+  },
+  {
+    "label": "Charlie's 1-year soberversary at Waterfall Glen",
+    "month": "May",
+    "id": "may19",
+    "right": true
+  },
+  {
+    "label": "trip to Zurich and Venice, Charlie's 35th birthday",
+    "month": "June",
+    "id": "jun19"
+  },
+  {
+    "label": "our sixth trip to Emerald Isle together, first time driving, 3-year anniversary",
+    "month": "July",
+    "id": "jul19",
+    "right": true
+  },
+  {
+    "label": "Charlie's second gig with Echo's Aim",
+    "month": "Aug",
+    "id": "aug19"
+  },
+  {
+    "label": "Amanda attends Starbucks Leadership Experience",
+    "month": "Sept",
+    "id": "sept19",
+    "right": true
+  },
+  {
+    "label": "Charlie's parents move to 14 Riding Ridge",
+    "month": "Oct",
+    "id": "oct19"
+  },
+  {
+    "label": "Charlie leaves Uptake, joins Centro",
+    "month": "Nov",
+    "id": "nov19",
+    "right": true
+  },
+  {
+    "label": "Amanda gets Ferro di Prua tattoo",
+    "month": "Dec",
+    "id": "dec19"
+  },
+  {
+    "year": "2020"
+  },
+  {
+    "label": "we buy our black leather couch",
+    "month": "Jan",
+    "id": "jan20",
+    "right": true
+  },
+  {
+    "label": "Beloved 59 Retreat",
+    "month": "Feb",
+    "id": "feb20"
+  },
+  {
+    "label": "the COVID-19 pandemic begins",
+    "month": "Mar",
+    "id": "mar20",
+    "right": true
+  },
+  {
+    "label": "Charlie's 2-year soberversary at Indiana Dunes National Park",
+    "month": "May",
+    "id": "may20"
+  },
+  {
+    "label": "our seventh trip to Emerald Isle together",
+    "month": "June",
+    "id": "jun20a",
+    "right": true
+  },
+  {
+    "label": "we attend Mass for the first time since COVID began",
+    "month": "June",
+    "id": "jun20b",
+    "right": true
+  },
+  {
+    "label": "Amelia Rose Blakley is born",
+    "month": "July",
+    "id": "jul20a",
+    "notable": true
+  },
+  {
+    "label": "we go to our first drive-in movie",
+    "month": "July",
+    "id": "jul20b"
+  },
+  {
+    "label": "we visit Camden, ME and Acadia National Park",
+    "month": "Sept",
+    "id": "sept20",
+    "right": true
+  },
+  {
+    "label": "Joe Biden is elected President",
+    "month": "Nov",
+    "id": "nov20"
+  },
+  {
+    "year": "2021"
+  },
+  {
+    "label": "the Chicago Snowpocalypse of 2021",
+    "month": "Feb",
+    "id": "feb21",
+    "right": true
+  },
+  {
+    "label": "we get vaccinated against COVID-19",
+    "month": "Mar-Apr",
+    "id": "mar21"
+  },
+  {
+    "label": "Charlie plays gig with As The Romans",
+    "month": "Apr",
+    "id": "apr21",
+    "right": true
+  },
+  {
+    "label": "Charlie's 3-year soberversary, first time seeing Amanda's family since COVID began",
+    "month": "May",
+    "id": "may21a"
+  },
+  {
+    "label": "105th Running of the Indianapolis 500",
+    "month": "May",
+    "id": "may21b"
+  },
+  {
+    "label": "our eighth trip to Emerald Isle together",
+    "month": "June",
+    "id": "jun21",
+    "right": true
+  },
+  {
+    "label": "our 5-year anniversary in St. Louis",
+    "month": "July",
+    "id": "jul21"
+  }
+]
