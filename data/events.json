@@ -5,43 +5,41 @@
   {
     "label": "we meet at Sundance 2009",
     "month": "Jan",
-    "id": "jan09",
-    "img": "running",
+    "id": "09jan",
     "notable": true
   },
   {
     "label": "we start dating",
     "month": "Feb",
-    "id": "feb09",
-    "img": "running",
+    "id": "09feb",
     "right": true
   },
   {
     "label": "Amanda convinces Charlie to get a tattoo",
     "month": "Mar",
-    "id": "mar09"
+    "id": "09mar"
   },
   {
     "label": "Amanda graduates",
     "month": "May",
-    "id": "may09a",
+    "id": "09maya",
     "right": true
   },
   {
     "label": "Charlie's 1st White Sox game",
     "month": "May",
-    "id": "may09b",
+    "id": "09mayb",
     "right": true
   },
   {
     "label": "we move in together at 777 N. Michigan",
     "month": "July",
-    "id": "jul09a"
+    "id": "09jula"
   },
   {
     "label": "our first trip together, Portland and Seattle",
     "month": "July",
-    "id": "jul09b"
+    "id": "09julb"
   },
   {
     "label": "Gill's wedding in NJ, Amanda meets Charlie's family",
@@ -52,7 +50,7 @@
   {
     "label": "we attend a White Sox game with box of our dads",
     "month": "Sept",
-    "id": "sep09"
+    "id": "09sept"
   },
   {
     "year": "2010"
@@ -60,41 +58,41 @@
   {
     "label": "Sundance 2010, Amanda lives in Park City for 1 month",
     "month": "Jan",
-    "id": "jan10",
+    "id": "10jan",
     "right": true
   },
   {
     "label": "Charlie's 1st St Patrick's Day/Grandma Dina's birthday with Amanda's family",
     "month": "Mar",
-    "id": "mar10a"
+    "id": "10mara"
   },
   {
     "label": "our trip to New Orleans",
     "month": "Mar",
-    "id": "mar10b",
+    "id": "10marb",
     "right": true
   },
   {
     "label": "we move to 537 S. Dearborn",
     "month": "Apr",
-    "id": "apr10"
+    "id": "10apr"
   },
   {
     "label": "Amanda and her parents join Charlie's family vacation at Lake Cumberland, KY",
     "month": "July",
-    "id": "jul10",
+    "id": "10jul",
     "right": true
   },
   {
     "label": "our first trip to Europe together, Switzerland and Italy",
     "month": "Sept",
-    "id": "sept10",
+    "id": "10sept",
     "notable": true
   },
   {
     "label": "our first time pumpkin picking with Madison and Tristan",
     "month": "Oct",
-    "id": "oct10",
+    "id": "10oct",
     "right": true
   },
   {
@@ -103,52 +101,52 @@
   {
     "label": "Sundance 2011, Amanda as volunteer, Charlie as pass holder",
     "month": "Jan",
-    "id": "jan11"
+    "id": "11jan"
   },
   {
     "label": "our first Mass at Old St. Patrick's Church",
     "month": "Feb",
-    "id": "feb11a",
+    "id": "11feba",
     "notable": true,
     "right": true
   },
   {
     "label": "the Chicago Blizzard of 2011 (aka: 'Snowmageddon')",
     "month": "Feb",
-    "id": "feb11b",
+    "id": "11febb",
     "right": true
   },
   {
     "label": "Charlie gets first iPhone and joins Instagram",
     "month": "Mar",
-    "id": "mar11"
+    "id": "11mar"
   },
   {
     "label": "Madison and Tristan's wedding",
     "month": "May",
-    "id": "may11",
+    "id": "11may",
     "right": true
   },
   {
     "label": "we visit Palm Springs for the first time",
     "month": "June",
-    "id": "jun11"
+    "id": "11jun"
   },
   {
     "label": "Charlie leaves Univ. of Chicago, gets job at The Plum Tree Group",
     "month": "Oct",
-    "id": "oct11",
+    "id": "11oct",
     "right": true
   },
   {
     "label": "Amanda gets her first iPhone",
     "month": "Nov",
-    "id": "nov11"
+    "id": "11nov"
   },
   {
     "label": "we spend the holidays together for the first time",
     "month": "Dec",
-    "id": "dec11",
+    "id": "11dec",
     "right": true
   },
   {
@@ -157,50 +155,50 @@
   {
     "label": "Charlie's parents move to Columbus, OH",
     "month": "Jan",
-    "id": "jan12a"
+    "id": "12jana"
   },
   {
     "label": "Charlie begins 12-week Code Academy course",
     "month": "Jan",
-    "id": "jan12b"
+    "id": "12janb"
   },
   {
     "label": "we move out of 537 S. Dearborn, and back in with parents",
     "month": "Apr",
-    "id": "apr12",
+    "id": "12apr",
     "right": true
   },
   {
     "label": "Charlie moves in with Amanda's parents",
     "month": "June",
-    "id": "jun12a"
+    "id": "12jula"
   },
   {
     "label": "Charlie begins working for ConnectFood",
     "month": "June",
-    "id": "jun12b"
+    "id": "12junb"
   },
   {
     "label": "Charlie signs 6-month lease at 1030 N. Dearborn",
     "month": "Oct",
-    "id": "oct12a",
+    "id": "12octa",
     "right": true
   },
   {
     "label": "Jessica and Tony's wedding in NJ",
     "month": "Oct",
-    "id": "oct12b",
+    "id": "12octb",
     "right": true
   },
   {
     "label": "Thanksgiving in Columbus with Gaga",
     "month": "Nov",
-    "id": "nov12"
+    "id": "12nov"
   },
   {
     "label": "our first Jingle Bell 5K",
     "month": "Dec",
-    "id": "dec12",
+    "id": "12dec",
     "right": true
   },
   {
@@ -209,24 +207,24 @@
   {
     "label": "Charlie begins working at Razorfish",
     "month": "Jan",
-    "id": "jan13"
+    "id": "13jan"
   },
   {
     "label": "we move in to 1212 S. Michigan",
     "month": "May",
-    "id": "may13",
+    "id": "13may",
     "notable": true,
     "right": true
   },
   {
     "label": "our first trip to Emerald Isle together",
     "month": "June",
-    "id": "jun13"
+    "id": "13jun"
   },
   {
     "label": "Christmas in Savannah, GA",
     "month": "Dec",
-    "id": "dec13",
+    "id": "13dec",
     "right": true
   },
   {

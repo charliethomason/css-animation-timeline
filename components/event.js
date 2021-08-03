@@ -25,7 +25,7 @@ export default function Event({
         <div className="circle-half left"></div>
         <div className="circle-half right"></div>
       </div>
-      {!!img && <img src={`/${img}.jpg`} alt={label} className={`img ${activeClass}`} />}
+      {!!img && <img src={`/photos/thumbs/${img}.jpg`} alt={label} className={`img ${activeClass}`} />}
     </li>
   );
 }

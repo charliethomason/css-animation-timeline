@@ -29,7 +29,7 @@ export default function Timeline() {
               key={evt.id}
               label={evt.label}
               month={evt.month}
-              img={evt.img}
+              img={evt.id}
               alignRight={evt.right}
               notable={evt.notable}
               isActive={!!activeEvent && activeEvent.id === evt.id}
@@ -40,7 +40,7 @@ export default function Timeline() {
         })}
       </ul>
       <Lightbox
-        img={activeEvent.img}
+        img={activeEvent.id}
         label={activeEvent.label}
         isShown={lightboxShown}
         onClose={() => setLightboxShown(false)}
