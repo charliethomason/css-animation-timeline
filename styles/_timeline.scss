@@ -27,12 +27,11 @@
   text-align: center;
   text-shadow: 2px 2px 0px $black;
   width: 415px;
-  z-index: 1;
+  z-index: 3;
 }
 .btn {
   $self: &;
 
-  background: $blue;
   border: none;
   color: $white;
   cursor: pointer;
@@ -42,8 +41,29 @@
   transition: all .2s ease;
   width: 200px;
 
+  &--blue {
+    background: $blue;
+
+    &:hover {
+      background: $light-blue;
+    }
+    &:before {
+      background: $light-blue;
+    }
+  }
+
+  &--violet {
+    background: $violet;
+
+    &:hover {
+      background: $light-violet;
+    }
+    &:before {
+      background: $light-violet;
+    }
+  }
+
   &:before {
-    background: $light-blue;
     content: "";
     display: block;
     position: absolute;
@@ -63,8 +83,6 @@
   }
 
   &:hover {
-    background: $light-blue;
-
     &:before {
       animation: drawBorder 0.5s linear forwards;
       z-index: 2;
@@ -100,7 +118,8 @@
 
   &:after {
     background: $trans-black;
-    border: 4px solid $light-blue;
+    border-style: solid;
+    border-width: 4px;
     border-radius: 50%;
     content: "";
     display: block;
@@ -108,6 +127,13 @@
     opacity: 0;
     position: absolute;
     width: 92px;
+  }
+
+  &--blue:after {
+    border-color: $light-blue;
+  }
+  &--violet:after {
+    border-color: $light-violet;
   }
 
   &:hover {
@@ -193,8 +219,11 @@
       &:after {
         right: 100%;
       }
-      &.active {
-        animation: drawGradientLeft 0.5s linear forwards;
+      &--blue.active {
+        animation: drawGradientBlueLeft 0.5s linear forwards;
+      }
+      &--violet.active {
+        animation: drawGradientVioletLeft 0.5s linear forwards;
       }
     }
 
@@ -224,9 +253,12 @@
       }
       &:after {
         left: 100%;
+      }      
+      &--blue.active {
+        animation: drawGradientBlueRight 0.5s linear forwards;
       }
-      &.active {
-        animation: drawGradientRight 0.5s linear forwards;
+      &--violet.active {
+        animation: drawGradientVioletRight 0.5s linear forwards;
       }
     }
 
@@ -246,6 +278,23 @@
   }
 }
 
+@function gradientColor($bg, $dir, $pct) {
+  @return linear-gradient(to $dir, $bg $pct, $green $pct);
+}
+@mixin gradientColors($bg, $dir) {
+  0% { background: $bg }
+  10% { background: gradientColor($bg, $dir, 90%) }
+  20% { background: gradientColor($bg, $dir, 80%) }
+  30% { background: gradientColor($bg, $dir, 70%) }
+  40% { background: gradientColor($bg, $dir, 60%) }
+  50% { background: gradientColor($bg, $dir, 50%) }
+  60% { background: gradientColor($bg, $dir, 40%) }
+  70% { background: gradientColor($bg, $dir, 30%) }
+  80% { background: gradientColor($bg, $dir, 20%) }
+  90% { background: gradientColor($bg, $dir, 10%) }
+  100% { background: $green }
+}
+
 @keyframes drawBorder {
   0% { height: 0px }
   25% { height: 50% }
@@ -253,31 +302,17 @@
   75% { height: calc(100% + 20px) }
   100% { height: calc(100% + 40px) }
 }
-@keyframes drawGradientLeft {
-  0% { background: $light-blue }
-  10% { background: linear-gradient(to right, $light-blue 90%, $green 90%) }
-  20% { background: linear-gradient(to right, $light-blue 80%, $green 80%) }
-  30% { background: linear-gradient(to right, $light-blue 70%, $green 70%) }
-  40% { background: linear-gradient(to right, $light-blue 60%, $green 60%) }
-  50% { background: linear-gradient(to right, $light-blue 50%, $green 50%) }
-  60% { background: linear-gradient(to right, $light-blue 40%, $green 40%) }
-  70% { background: linear-gradient(to right, $light-blue 30%, $green 30%) }
-  80% { background: linear-gradient(to right, $light-blue 20%, $green 20%) }
-  90% { background: linear-gradient(to right, $light-blue 10%, $green 10%) }
-  100% { background: $green }
+@keyframes drawGradientBlueLeft {
+  @include gradientColors($light-blue, right);
 }
-@keyframes drawGradientRight {
-  0% { background: $light-blue }
-  10% { background: linear-gradient(to left, $light-blue 90%, $green 90%) }
-  20% { background: linear-gradient(to left, $light-blue 80%, $green 80%) }
-  30% { background: linear-gradient(to left, $light-blue 70%, $green 70%) }
-  40% { background: linear-gradient(to left, $light-blue 60%, $green 60%) }
-  50% { background: linear-gradient(to left, $light-blue 50%, $green 50%) }
-  60% { background: linear-gradient(to left, $light-blue 40%, $green 40%) }
-  70% { background: linear-gradient(to left, $light-blue 30%, $green 30%) }
-  80% { background: linear-gradient(to left, $light-blue 20%, $green 20%) }
-  90% { background: linear-gradient(to left, $light-blue 10%, $green 10%) }
-  100% { background: $green }
+@keyframes drawGradientBlueRight {
+  @include gradientColors($light-blue, left);
+}
+@keyframes drawGradientVioletLeft {
+  @include gradientColors($light-violet, right);
+}
+@keyframes drawGradientVioletRight {
+  @include gradientColors($light-violet, left);
 }
 @keyframes drawLine {
   0%, 25% { width: 0px; }

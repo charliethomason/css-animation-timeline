@@ -4,12 +4,13 @@ export default function Event({
   img,
   alignRight,
   notable,
+  color,
   isActive,
   onClick,
   onCircleClick
 }) {
   const activeClass = isActive ? "active" : "";
-  const btnClasses = `btn ${activeClass} ${notable ? "notable" : ""}`;
+  const btnClasses = `btn ${activeClass} ${notable ? "notable" : ""} btn--${color}`;
   return (
     <li className={`event ${alignRight ? "align-right" : ""}`}>
       <button
@@ -19,7 +20,7 @@ export default function Event({
       >
         <strong>{month}:</strong> {label}
       </button>
-      <div className={`circle ${isActive ? "" : "hidden"}`} onClick={onCircleClick}>
+      <div className={`circle ${isActive ? "" : "hidden"} circle--${color}`} onClick={onCircleClick}>
         <div className="circle-half left"></div>
         <div className="circle-half right"></div>
       </div>
