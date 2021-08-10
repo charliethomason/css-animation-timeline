@@ -244,7 +244,7 @@
   {
     "label": "our second trip to Emerald Isle together, first at Pebble Beach, Charlie's 30th birthday",
     "month": "June",
-    "id": "jun14"
+    "id": "14jun"
   },
   {
     "label": "we visit Boston and Maine for the first time",
@@ -281,39 +281,39 @@
   {
     "label": "first visit to Glessner House",
     "month": "May",
-    "id": "may15"
+    "id": "15may"
   },
   {
     "label": "our third trip to Emerald Isle together",
     "month": "June",
-    "id": "jun15a",
+    "id": "15juna",
     "right": true
   },
   {
     "label": "Charlie buys a bike",
     "month": "June",
-    "id": "jun15b",
+    "id": "15junb",
     "right": true
   },
   {
     "label": "Charlie quits being friends with Michael",
     "month": "Sept",
-    "id": "sept15a"
+    "id": "15septa"
   },
   {
     "label": "trip with Charlie's family to Blackwater Falls",
     "month": "Sept",
-    "id": "sept15b"
+    "id": "15septb"
   },
   {
     "label": "Amanda's first auto race, NASCAR at Chicagoland Speedway",
     "month": "Sept",
-    "id": "sept15c"
+    "id": "15septc"
   },
   {
     "label": "the F1 U.S. Grand Prix in Austin, TX",
     "month": "Oct",
-    "id": "oct15",
+    "id": "15oct",
     "right": true
   },
   {
@@ -322,17 +322,23 @@
   {
     "label": "Charlie's parents move to Innsbruck, Austria",
     "month": "Jan-May",
-    "id": "jan16"
+    "id": "16jan"
   },
   {
     "label": "we visit Charlie's parents in Austria",
     "month": "Mar",
-    "id": "mar16"
+    "id": "16mar"
+  },
+  {
+    "label": "Amanda's bridal shower",
+    "month": "June",
+    "id": "jun16a",
+    "right": true
   },
   {
     "label": "Amanda's first IndyCar race, at Road America with Kalan and our dads",
     "month": "June",
-    "id": "jun16",
+    "id": "jun16b",
     "right": true
   },
   {
@@ -381,46 +387,46 @@
   {
     "label": "Charlie leaves Razorfish, joins Uptake",
     "month": "Mar",
-    "id": "mar17"
+    "id": "17mar"
   },
   {
     "label": "101st Running of the Indianapolis 500",
     "month": "May",
-    "id": "may17",
+    "id": "17may",
     "right": true
   },
   {
-    "label": "our first trip to Emerald Isle together",
+    "label": "our fourth trip to Emerald Isle together",
     "month": "June",
-    "id": "jun17"
+    "id": "17jun"
   },
   {
     "label": "our 1-year anniversary in Palm Springs",
     "month": "July",
-    "id": "jul17",
+    "id": "17jul",
     "right": true
   },
   {
     "label": "Michael and Rachel get married",
     "month": "Aug",
-    "id": "aug17",
+    "id": "17aug",
     "notable": true
   },
   {
     "label": "Charlie's parents move back to KY",
     "month": "Sept",
-    "id": "sept17",
+    "id": "17sept",
     "right": true
   },
   {
     "label": "we visit London and Paris with Kurt",
     "month": "Oct",
-    "id": "oct17"
+    "id": "17oct"
   },
   {
     "label": "we buy our first queen-sized mattress",
     "month": "Nov",
-    "id": "nov17",
+    "id": "17nov",
     "right": true
   },
   {
@@ -483,14 +489,14 @@
     "right": true
   },
   {
-    "label": "Amanda begins RCIA process at Old St. Pat's",
-    "month": "Sept",
-    "id": "sept18a"
-  },
-  {
     "label": "trip to Laguna Seca and Carmel-by-the-Sea for IMSA race",
     "month": "Sept",
     "id": "sept18b"
+  },
+  {
+    "label": "Amanda begins RCIA process at Old St. Pat's",
+    "month": "Sept",
+    "id": "sept18a"
   },
   {
     "label": "Charlie gets Google Pixel 3",
@@ -505,9 +511,14 @@
     "right": true
   },
   {
+    "label": "we go see 2126 N. Lincoln for the first time",
+    "month": "Dec",
+    "id": "dec18a"
+  },
+  {
     "label": "Christkindlmarket Naperville with Madison, Tristan, and Cindy",
     "month": "Dec",
-    "id": "dec18"
+    "id": "dec18b"
   },
   {
     "year": "2019"
@@ -536,9 +547,9 @@
     "right": true
   },
   {
-    "label": "Amanda's becomes Catholic, Confirmation at Old St. Pat's",
+    "label": "Amanda's becomes Catholic, has Confirmation at Old St. Pat's",
     "month": "Apr",
-    "id": "apr19",
+    "id": "19apr",
     "notable": true
   },
   {
@@ -570,9 +581,14 @@
     "right": true
   },
   {
+    "label": "we run our first 5K together, the Rosehill Crypt 5K",
+    "month": "Oct",
+    "id": "oct19a"
+  },
+  {
     "label": "Charlie's parents move to 14 Riding Ridge",
     "month": "Oct",
-    "id": "oct19"
+    "id": "oct19b"
   },
   {
     "label": "Charlie leaves Uptake, joins Centro",
@@ -650,7 +666,7 @@
   {
     "label": "the Chicago Snowpocalypse of 2021",
     "month": "Feb",
-    "id": "feb21",
+    "id": "21feb",
     "right": true
   },
   {
