@@ -4,12 +4,13 @@ import Event from "./event";
 import Lightbox from "./lightbox";
 
 export default function Timeline() {
-  const defaultEvent = { id: null, img: null, label: null };
+  const defaultEvent = { id: null, month: null, year: null, label: null };
   const [activeEvent, setActiveEvent] = useState(defaultEvent);
   const [lightboxShown, setLightboxShown] = useState(false);
 
   const colors = ["blue", "violet"];
   let colorIndex = 1;
+  let currentYear;
 
   function handleClick(evt) {
     if (activeEvent.id !== evt.id) {
@@ -26,6 +27,7 @@ export default function Timeline() {
           const isYear = !!evt.year;
           if (isYear) {
             colorIndex = (colorIndex + 1) % colors.length;
+            currentYear = evt.year;
           }
           return isYear ? (
             <li key={evt.year}>
@@ -36,12 +38,13 @@ export default function Timeline() {
               key={evt.id}
               label={evt.label}
               month={evt.month}
+              year={currentYear}
               img={evt.id}
               alignRight={evt.right}
               notable={evt.notable}
               color={colors[colorIndex]}
               isActive={!!activeEvent && activeEvent.id === evt.id}
-              onClick={() => handleClick(evt)}
+              onClick={evtObj => handleClick(evtObj)}
               onCircleClick={() => setLightboxShown(true)}
             />
           )
@@ -49,6 +52,8 @@ export default function Timeline() {
       </ul>
       <Lightbox
         img={activeEvent.id}
+        month={activeEvent.month}
+        year={activeEvent.year}
         label={activeEvent.label}
         isShown={lightboxShown}
         onClose={() => setLightboxShown(false)}

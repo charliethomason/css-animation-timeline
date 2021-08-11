@@ -1,6 +1,7 @@
 export default function Event({
   label,
   month,
+  year,
   img,
   alignRight,
   notable,
@@ -16,7 +17,7 @@ export default function Event({
       <button
         type="button"
         className={btnClasses}
-        onClick={onClick}
+        onClick={() => onClick({ id: img, month, year, label })}
       >
         <strong>{month}:</strong> {label}
       </button>

@@ -7,17 +7,14 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 2;
+  z-index: 3;
 
   &.hidden {
     display: none;
   }
 
   &-dialog {
-    background-color: $white;
-    border-radius: 10px;
     display: flex;
-    padding: 20px;
     max-height: 90%;
     max-width: 90%;
   }
@@ -30,14 +27,23 @@
   }
 
   &-img {
+    background: $white;
+    border: 3px solid $black;
+    border-radius: 10px;
     display: block;
     max-height: 100%;
     max-width: 100%;
+    padding: 10px;
   }
 
   &-label {
+    background: $white;
+    border: 3px solid $black;
+    border-radius: 10px;
     color: $black;
     font-size: 14px;
+    margin-top: -20px;
+    padding: 5px 10px;
   }
 
   &-close {
