@@ -32,9 +32,20 @@
     "right": true
   },
   {
+    "label": "we go to the Grant Park Music Festival for the first time",
+    "month": "June",
+    "id": "09juna"
+  },
+  {
+    "label": "Amanda visits Kentucky for the first time",
+    "month": "June",
+    "id": "09junb"
+  },
+  {
     "label": "we move in together at 777 N. Michigan",
     "month": "July",
-    "id": "09jula"
+    "id": "09jula",
+    "right": true
   },
   {
     "label": "our first trip together, Portland and Seattle",
@@ -44,7 +55,7 @@
   {
     "label": "Gill's wedding in NJ, Amanda meets Charlie's family",
     "month": "Aug",
-    "id": "aug09",
+    "id": "09aug",
     "right": true
   },
   {
@@ -53,18 +64,24 @@
     "id": "09sept"
   },
   {
+    "label": "'Quarter Til Two' premieres at Columbia Practicum event",
+    "month": "Oct",
+    "id": "09oct",
+    "right": true
+  },
+  {
     "year": "2010"
   },
   {
     "label": "Sundance 2010, Amanda lives in Park City for 1 month",
     "month": "Jan",
-    "id": "10jan",
-    "right": true
+    "id": "10jan"
   },
   {
     "label": "Charlie's 1st St Patrick's Day/Grandma Dina's birthday with Amanda's family",
     "month": "Mar",
-    "id": "10mara"
+    "id": "10mara",
+    "right": true
   },
   {
     "label": "our trip to New Orleans",
@@ -233,7 +250,7 @@
   {
     "label": "we become members at Old St. Pat's",
     "month": "Feb",
-    "id": "feb14"
+    "id": "14feb"
   },
   {
     "label": "we buy our first succulent",
@@ -260,7 +277,7 @@
   {
     "label": "Charlie begins work on bird book",
     "month": "Oct",
-    "id": "oct14",
+    "id": "14oct",
     "right": true
   },
   {
