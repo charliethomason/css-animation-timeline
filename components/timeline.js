@@ -1,5 +1,6 @@
 import { useState } from "react";
 import events from "../data/events.json";
+import Nav from "./nav";
 import Event from "./event";
 import Lightbox from "./lightbox";
 
@@ -7,6 +8,7 @@ export default function Timeline() {
   const defaultEvent = { id: null, month: null, year: null, label: null };
   const [activeEvent, setActiveEvent] = useState(defaultEvent);
   const [lightboxShown, setLightboxShown] = useState(false);
+  const years = events.filter(evt => !!evt.year).map(evt => evt.year);
 
   const colors = ["blue", "violet"];
   let colorIndex = 1;
@@ -22,6 +24,7 @@ export default function Timeline() {
 
   return (
     <>
+      <Nav years={years} />
       <ul className="timeline">
         {events.map(evt => {
           const isYear = !!evt.year;
@@ -31,6 +34,7 @@ export default function Timeline() {
           }
           return isYear ? (
             <li key={evt.year}>
+              <div id={evt.year} className="year-anchor" />
               <h2 className="year">{evt.year}</h2>
             </li>
           ) : (

@@ -16,5 +16,29 @@ strong {
   display: none;
 }
 main {
-  padding: 50px;
+  padding: 0 50px;
+}
+nav {
+  background: $black;
+  left: 0;
+  padding: 10px 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    color: $green;
+    margin: 0 5px;
+    text-decoration: underline;
+
+    &:hover, &:focus {
+      color: $white;
+      text-decoration: none;
+    }
+  }
 }
