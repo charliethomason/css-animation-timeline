@@ -1,8 +1,8 @@
 export default function Event({
+  id,
   label,
   month,
   year,
-  img,
   alignRight,
   notable,
   color,
@@ -12,20 +12,26 @@ export default function Event({
 }) {
   const activeClass = isActive ? "active" : "";
   const btnClasses = `btn ${activeClass} ${notable ? "notable" : ""} btn--${color}`;
+  const imgUrl = `/photos/thumbs/${id}.jpg`;
   return (
     <li className={`event ${alignRight ? "align-right" : ""}`}>
+      <div id={`evt-${id}`} className="event-anchor" data-year={year}></div>
       <button
         type="button"
         className={btnClasses}
-        onClick={() => onClick({ id: img, month, year, label })}
+        style={{ backgroundImage: `url(${imgUrl})` }}
+        onClick={() => onClick({ id, month, year, label })}
       >
-        <strong>{month}:</strong> {label}
+        <div className="btn-text">
+          <strong>{month}:</strong> {label}
+        </div>
+        <div className="btn-line"></div>
       </button>
       <div className={`circle ${isActive ? "" : "hidden"} circle--${color}`} onClick={onCircleClick}>
         <div className="circle-half left"></div>
         <div className="circle-half right"></div>
       </div>
-      {!!img && <img src={`/photos/thumbs/${img}.jpg`} alt={label} className={`img ${activeClass}`} />}
+      <img src={imgUrl} alt={label} className={`img ${activeClass}`} />
     </li>
   );
 }

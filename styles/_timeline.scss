@@ -47,6 +47,8 @@
 .btn {
   $self: &;
 
+  background-position-y: -50px;
+  background-repeat: no-repeat;
   border: none;
   color: $white;
   cursor: pointer;
@@ -57,25 +59,24 @@
   width: 200px;
 
   &--blue {
-    background: $blue;
+    background-color: $blue;
 
-    &:hover {
-      background: $light-blue;
-    }
     &:before {
-      background: $light-blue;
+      background-color: $blue;
     }
   }
 
   &--violet {
-    background: $violet;
+    background-color: $violet;
 
-    &:hover {
-      background: $light-violet;
-    }
     &:before {
-      background: $light-violet;
+      background-color: $violet;
     }
+  }
+
+  &-text {
+    position: relative;
+    z-index: 1;
   }
 
   &:before {
@@ -88,6 +89,16 @@
   }
 
   &:after {
+    background: $green;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 0px;
+  }
+
+  &-line {
     border-top: 4px solid $green;
     content: '';
     display: none;
@@ -98,6 +109,8 @@
   }
 
   &:hover {
+    text-shadow: 1px 1px 0px $black;
+
     &:before {
       animation: drawBorder 0.5s linear forwards;
       z-index: 2;
@@ -110,15 +123,19 @@
   }
 
   &.active {
-    background: $green;
+    background-color: $green;
     color: $black;
+    text-shadow: none;
 
     &:before {
-      background: $green;
+      background-color: $green;
       height: calc(100% + 40px);
       z-index: 1;
     }
     &:after {
+      animation: drawActive 0.5s linear forwards;
+    }
+    #{$self}-line {
       display: block;
     }
   }
@@ -181,7 +198,7 @@
       &:after {
         border-bottom-color: $green;
         border-left-color: $green;
-        left: 4px;
+        left: 5px;
         animation: rotateLeft 2s linear forwards;
         animation-delay: 0.5s;
       }
@@ -193,7 +210,7 @@
       &:after {
         border-top-color: $green;
         border-right-color: $green;
-        right: 4px;
+        right: 5px;
         animation: rotateRight 2s linear forwards;
         animation-delay: 0.5s;
       }
@@ -226,19 +243,21 @@
     right: 120px;
 
     .btn {
+      background-position-x: 200px;
       text-align: right;
 
+      &:hover,
+      &.active {
+        background-position-x: 0px;
+      }
       &:before {
         right: -23px;
       }
       &:after {
+        right: 0;
+      }
+      &-line {
         right: 100%;
-      }
-      &--blue.active {
-        animation: drawGradientBlueLeft 0.5s linear forwards;
-      }
-      &--violet.active {
-        animation: drawGradientVioletLeft 0.5s linear forwards;
       }
     }
 
@@ -261,19 +280,21 @@
     left: 120px;
 
     .btn {
+      background-position-x: -200px;
       text-align: left;
 
+      &:hover,
+      &.active {
+        background-position-x: 0px;
+      }
       &:before {
         left: -23px;
       }
       &:after {
-        left: 100%;
-      }      
-      &--blue.active {
-        animation: drawGradientBlueRight 0.5s linear forwards;
+        left: 0;
       }
-      &--violet.active {
-        animation: drawGradientVioletRight 0.5s linear forwards;
+      &-line {
+        left: 100%;
       }
     }
 
@@ -291,23 +312,12 @@
       right: -191px;
     }
   }
-}
 
-@function gradientColor($bg, $dir, $pct) {
-  @return linear-gradient(to $dir, $bg $pct, $green $pct);
-}
-@mixin gradientColors($bg, $dir) {
-  0% { background: $bg }
-  10% { background: gradientColor($bg, $dir, 90%) }
-  20% { background: gradientColor($bg, $dir, 80%) }
-  30% { background: gradientColor($bg, $dir, 70%) }
-  40% { background: gradientColor($bg, $dir, 60%) }
-  50% { background: gradientColor($bg, $dir, 50%) }
-  60% { background: gradientColor($bg, $dir, 40%) }
-  70% { background: gradientColor($bg, $dir, 30%) }
-  80% { background: gradientColor($bg, $dir, 20%) }
-  90% { background: gradientColor($bg, $dir, 10%) }
-  100% { background: $green }
+  &-anchor {
+    content: "";
+    position: absolute;
+    top: -150px;
+  }
 }
 
 @keyframes drawBorder {
@@ -317,17 +327,9 @@
   75% { height: calc(100% + 20px) }
   100% { height: calc(100% + 40px) }
 }
-@keyframes drawGradientBlueLeft {
-  @include gradientColors($light-blue, right);
-}
-@keyframes drawGradientBlueRight {
-  @include gradientColors($light-blue, left);
-}
-@keyframes drawGradientVioletLeft {
-  @include gradientColors($light-violet, right);
-}
-@keyframes drawGradientVioletRight {
-  @include gradientColors($light-violet, left);
+@keyframes drawActive {
+  0% { width: 0%; }
+  100% { width: 100% }
 }
 @keyframes drawLine {
   0%, 25% { width: 0px; }

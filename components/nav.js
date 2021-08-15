@@ -1,4 +1,4 @@
-export default function Nav({ years }) {
+export default function Nav({ years, getRandom }) {
   return (
     <nav>
       <h1>Amanda and Charlie Life Timeline</h1>
@@ -6,6 +6,7 @@ export default function Nav({ years }) {
         {years.map(year => (
           <li key={`nav-${year}`}><a href={`#${year}`}>{year}</a></li>
         ))}
+        <li><button type="button" className="random" onClick={getRandom}>Random</button></li>
       </ul>
     </nav>
   );
