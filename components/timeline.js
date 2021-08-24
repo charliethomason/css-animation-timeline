@@ -10,9 +10,10 @@ export default function Timeline() {
   const [lightboxShown, setLightboxShown] = useState(false);
   const onlyEvents = events.filter(evt => !evt.year);
   const years = events.filter(evt => !!evt.year).map(evt => evt.year);
-  const colors = ["blue", "violet"];
-  let colorIndex = 1;
+  const colors = ["blue", "violet", "red", "teal"];
+  let colorIndex = 0;
   let currentYear;
+  let currentColor;
 
   function toggleLightbox(show) {
     setLightboxShown(show);
@@ -64,8 +65,10 @@ export default function Timeline() {
         {events.map(evt => {
           const isYear = !!evt.year;
           if (isYear) {
-            colorIndex = (colorIndex + 1) % colors.length;
+            colorIndex = colorIndex % colors.length;
+            currentColor = colors[colorIndex];
             currentYear = evt.year;
+            colorIndex++;
           }
           return isYear ? (
             <li key={evt.year}>
@@ -81,7 +84,7 @@ export default function Timeline() {
               year={currentYear}
               alignRight={evt.right}
               notable={evt.notable}
-              color={colors[colorIndex]}
+              color={currentColor}
               isActive={!!activeEvent && activeEvent.id === evt.id}
               onClick={evtObj => handleClick(evtObj)}
               onCircleClick={() => toggleLightbox(true)}

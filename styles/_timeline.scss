@@ -40,6 +40,20 @@
     top: -100px;
   }
 }
+
+@each $color, $hex in $evt-colors {
+  .btn--#{$color} {
+    background-color: $hex;
+
+    &:before {
+      background-color: $hex;
+    }
+  }
+  .circle--#{$color}:after {
+    border-color: $hex;
+  }
+}
+
 .btn {
   $self: &;
 
@@ -53,22 +67,6 @@
   padding: 10px;
   transition: all .2s ease;
   width: 200px;
-
-  &--blue {
-    background-color: $blue;
-
-    &:before {
-      background-color: $blue;
-    }
-  }
-
-  &--violet {
-    background-color: $violet;
-
-    &:before {
-      background-color: $violet;
-    }
-  }
 
   &-text {
     position: relative;
@@ -136,6 +134,7 @@
     }
   }
 }
+
 .circle {
   cursor: pointer;
   position: absolute;
@@ -155,13 +154,6 @@
     opacity: 0;
     position: absolute;
     width: 92px;
-  }
-
-  &--blue:after {
-    border-color: $light-blue;
-  }
-  &--violet:after {
-    border-color: $light-violet;
   }
 
   &:hover {
@@ -213,6 +205,7 @@
     }
   }
 }
+
 .img {
   border-radius: 50%;
   display: block;

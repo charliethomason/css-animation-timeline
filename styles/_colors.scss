@@ -1,8 +1,14 @@
 $blue: #037;
-$light-blue: #17519c;
-
 $violet: #580096;
-$light-violet: #8920d4;
+$red: #910000;
+$teal: #007363;
+
+$evt-colors: (
+  "blue": $blue,
+  "violet": $violet,
+  "red": $red,
+  "teal": $teal
+);
 
 $green: #2bb807;
 
