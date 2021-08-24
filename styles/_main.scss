@@ -3,6 +3,20 @@ body {
   color: #fff;
   font-family: Helvetica, Arial, sans-serif;
 }
+.no-scroll {
+  overflow: hidden;
+}
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
 h1 {
   font-size: 32px;
   font-weight: 300;
@@ -23,21 +37,27 @@ nav {
   left: 0;
   padding: 10px 10px 20px;
   position: fixed;
+  text-align: center;
   top: 0;
   width: 100%;
   z-index: 4;
 
-  ul {
-    display: flex;
-    justify-content: center;
+  select {
+    background: $black;
+    border: 1px solid $green;
+    color: $green;
+    font-size: 16px;
+    line-height: 1;
+    padding: 2px 5px;
   }
-  a, .random {
+
+  .random {
     background: none;
     border: none;
     color: $green;
     font-size: 16px;
     line-height: 1;
-    margin: 0 5px;
+    margin: 0 0 0 20px;
     padding: 0;
     text-decoration: underline;
 

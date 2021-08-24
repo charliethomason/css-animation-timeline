@@ -1,13 +1,15 @@
-export default function Nav({ years, getRandom }) {
+export default function Nav({ years, onChange, getRandom }) {
   return (
     <nav>
       <h1>Amanda and Charlie Life Timeline</h1>
-      <ul>
+      <label htmlFor="year-select" className="visually-hidden">Year</label>
+      <select id="year-select" onChange={evt => onChange(evt.target.value)}>
+        <option value="">Scroll to a year...</option>
         {years.map(year => (
-          <li key={`nav-${year}`}><a href={`#${year}`}>{year}</a></li>
+          <option key={`opt-${year}`} value={year}>{year}</option>
         ))}
-        <li><button type="button" className="random" onClick={getRandom}>Random</button></li>
-      </ul>
+      </select>
+      <button type="button" className="random" onClick={getRandom}>Random event</button>
     </nav>
   );
 }

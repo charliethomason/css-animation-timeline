@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import events from "../data/events.json";
 import Nav from "./nav";
 import Event from "./event";
@@ -10,10 +10,28 @@ export default function Timeline() {
   const [lightboxShown, setLightboxShown] = useState(false);
   const onlyEvents = events.filter(evt => !evt.year);
   const years = events.filter(evt => !!evt.year).map(evt => evt.year);
-
   const colors = ["blue", "violet"];
   let colorIndex = 1;
   let currentYear;
+
+  function toggleLightbox(show) {
+    setLightboxShown(show);
+    document.body.classList.toggle("no-scroll");
+  }
+
+  useEffect(() => {
+    if (!lightboxShown) {
+      return;
+    }
+    function closeLightbox(evt) {
+      if (evt.keyCode === 27){
+        console.log("HI!", new Date);
+        toggleLightbox(false);
+      }
+    }
+    window.addEventListener("keyup", closeLightbox);
+    return () => window.removeEventListener("keyup", closeLightbox);
+  }, [lightboxShown]);
 
   function handleClick(evt) {
     if (activeEvent.id !== evt.id) {
@@ -32,9 +50,16 @@ export default function Timeline() {
     handleClick({ label, month, id, year: evtAnchor.dataset.year });
   }
 
+  function scrollToYear(year) {
+    const yearAnchor = !!year
+      ? document.getElementById(`year-${year}`)
+      : document.querySelector(".year-anchor");
+    yearAnchor.scrollIntoView();
+  }
+
   return (
     <>
-      <Nav years={years} getRandom={getRandom} />
+      <Nav years={years} getRandom={getRandom} onChange={scrollToYear} />
       <ul className="timeline">
         {events.map(evt => {
           const isYear = !!evt.year;
@@ -44,7 +69,7 @@ export default function Timeline() {
           }
           return isYear ? (
             <li key={evt.year}>
-              <div id={evt.year} className="year-anchor" />
+              <div id={`year-${evt.year}`} className="year-anchor" />
               <h2 className="year">{evt.year}</h2>
             </li>
           ) : (
@@ -59,7 +84,7 @@ export default function Timeline() {
               color={colors[colorIndex]}
               isActive={!!activeEvent && activeEvent.id === evt.id}
               onClick={evtObj => handleClick(evtObj)}
-              onCircleClick={() => setLightboxShown(true)}
+              onCircleClick={() => toggleLightbox(true)}
             />
           )
         })}
@@ -70,7 +95,7 @@ export default function Timeline() {
         year={activeEvent.year}
         label={activeEvent.label}
         isShown={lightboxShown}
-        onClose={() => setLightboxShown(false)}
+        onClose={() => toggleLightbox(false)}
       />
     </>
   );
