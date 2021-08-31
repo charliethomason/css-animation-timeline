@@ -12,7 +12,7 @@ export default function Event({
 }) {
   const activeClass = isActive ? "active" : "";
   const btnClasses = `btn ${activeClass} ${notable ? "notable" : ""} btn--${color}`;
-  const imgUrl = `/photos/thumbs/${id}.jpg`;
+  const imgUrl = `./photos/thumbs/${id}.jpg`;
   return (
     <li className={`event ${alignRight ? "align-right" : ""}`}>
       <div id={`evt-${id}`} className="event-anchor" data-year={year}></div>
